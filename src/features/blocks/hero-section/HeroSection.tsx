@@ -26,34 +26,42 @@ const HeroSection = (props: HeroSectionProps) => {
 
   return (
     <div className={`w-full ${className}`} {...restProps}>
-      <div className="h-screen flex items-center">
+      <div className="h-full md:h-screen flex items-center">
         <section
-          className="bg-cover bg-center py-32 w-full"
+          className="bg-cover bg-center py-0 md:py-32 w-full"
           style={{ backgroundImage: `url('${backgroundImageUrl}')` }}
         >
-          <div className="container mx-auto text-left text-black">
-            <div className="flex items-center">
-              <div className="w-1/2">
+          <div className="container mx-auto text-center text-black">
+            <div className="flex flex-col-reverse md:flex-row-reverse items-center">
+              <div className="mt-10 md:p-16">
+                <img
+                  src={imageUrl}
+                  className="h-full w-full object-cover "
+                  alt="Layout Image"
+                />
+              </div>
+              <div className="md:w-1/2 mt-0 md:mt-4">
                 {title && (
-                  <h1 className="text-5xl font-medium mb-6">{title}</h1>
+                  <h1 className="text-6xl md:text-left md:text-8xl font-semibold my-10 md:mb-4">
+                    {title}
+                  </h1>
                 )}
-                {description && <p className="text-xl mb-40">{description}</p>}
+                {description && (
+                  <p className="text-lg md:text-left md:text-2xl">
+                    {description}
+                  </p>
+                )}
                 {buttonText && (
+                  <div className="mt-10">
                   <a
                     href="#"
-                    className="bg-blue-500 text-white py-4 px-12 rounded-full hover:bg-blue-600"
+                    className=" bg-blue-500 text-white py-3 px-8 rounded-full hover:bg-blue-600"
                   >
                     {buttonText}
                   </a>
+                  </div>
                 )}
                 {subtext && <p className="text-sm mt-4">{subtext}</p>}
-              </div>
-              <div className="w-1/2 pl-16">
-                <img
-                  src={imageUrl}
-                  className="h-64 w-full object-cover rounded-xl"
-                  alt="Layout Image"
-                />
               </div>
             </div>
           </div>

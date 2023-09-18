@@ -60,7 +60,7 @@ const NavbarBlock: React.FC<NavbarProps> = () => {
             Contacts
           </a>
         </div>
-        <div className="relative mx-auto text-gray-600 lg:block hidden">
+        <div className="relative mr-2 text-gray-600 lg:block hidden">
           <input
             className="border-2 border-gray-300 bg-white h-10 pl-2 pr-8 rounded-lg text-sm focus:outline-none"
             type="search"
@@ -88,7 +88,7 @@ const NavbarBlock: React.FC<NavbarProps> = () => {
         <div className="flex">
           <a
             href="#"
-            className=" block text-md px-4  ml-2 py-2 rounded text-blue-700 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0"
+            className=" block text-md px-4 py-2 rounded text-blue-700 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0"
           >
             login
           </a>

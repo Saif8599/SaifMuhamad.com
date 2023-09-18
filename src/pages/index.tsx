@@ -12,9 +12,9 @@ const Index: React.FC = () => {
         <HeroSection
           className="bg-gradient-to-l from-blue-500 to-blue-900"
           data={{
-            title: "Welcome to My Portfolio",
-            description: "This is a sample description.",
-            buttonText: "dont click me",
+            title: "Welcome to my Portfolio",
+            description: "This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. ",
+            // buttonText: "dont click me",
             imageUrl: "https://picsum.photos/seed/76/1440/810",
           }}
         />
