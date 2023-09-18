@@ -52,7 +52,7 @@ const HeroSection = (props: HeroSectionProps) => {
                   </p>
                 )}
                 {buttonText && (
-                  <div className="mt-10">
+                  <div className="mt-10 text-center md:text-left">
                   <a
                     href="#"
                     className=" bg-blue-500 text-white py-3 px-8 rounded-full hover:bg-blue-600"

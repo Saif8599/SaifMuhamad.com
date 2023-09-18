@@ -1,4 +1,4 @@
-import { Story } from '@storybook/react';
+import { StoryFn } from '@storybook/react';
 import TEMPLATE, { TEMPLATEProps } from './TEMPLATE';
 
 export default {
@@ -6,7 +6,7 @@ export default {
   component: TEMPLATE,
 };
 
-const Template: Story<TEMPLATEProps> = (args) => <TEMPLATE {...args} />;
+const Template: StoryFn<TEMPLATEProps> = (args) => <TEMPLATE {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {};

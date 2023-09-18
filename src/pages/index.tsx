@@ -2,6 +2,7 @@ import React from "react";
 import NavbarBlock from "../features/blocks/navbar/NavbarBlock";
 import HeroSection from "../features/blocks/hero-section/HeroSection";
 import QuoteBlock from "../features/blocks/quote/QuoteBlock";
+import Footer from "../features/blocks/footer/Footer";
 
 
 const Index: React.FC = () => {
@@ -12,9 +13,9 @@ const Index: React.FC = () => {
         <HeroSection
           className="bg-gradient-to-l from-blue-500 to-blue-900"
           data={{
-            title: "Welcome to my Portfolio",
-            description: "This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. ",
-            // buttonText: "dont click me",
+            title: "Saif Muhamad",
+            description: "A Front-end Web developer based in Amsterdam, The Netherlands.",
+            buttonText: "contact me",
             imageUrl: "https://picsum.photos/seed/76/1440/810",
           }}
         />
@@ -25,6 +26,7 @@ const Index: React.FC = () => {
             authorSubscript: "Rich Dad, Poor Dad",
           }}
         />
+        <footer/>
       </div>
     </div>
   );
