@@ -3,6 +3,7 @@ import NavbarBlock from "../features/blocks/navbar/NavbarBlock";
 import HeroSection from "../features/blocks/hero-section/HeroSection";
 import QuoteBlock from "../features/blocks/quote/QuoteBlock";
 import FooterBlock from "../features/blocks/footer/FooterBlock";
+import ContactBlock from "../features/blocks/contact/ContactBlock";
 
 
 const Index: React.FC = () => {
@@ -26,6 +27,7 @@ const Index: React.FC = () => {
             authorSubscript: "Rich Dad, Poor Dad",
           }}
         />
+        <ContactBlock/>
         <FooterBlock/>
       </div>
     </div>

@@ -28,7 +28,7 @@ const HeroSection = (props: HeroSectionProps) => {
     <div className={`w-full ${className}`} {...restProps}>
       <div className="h-full md:h-screen flex items-center">
         <section
-          className="bg-cover bg-center py-0 md:py-32 w-full"
+          className="w-full bg-cover bg-center py-0 md:py-32 md:pl-10 "
           style={{ backgroundImage: `url('${backgroundImageUrl}')` }}
         >
           <div className="container mx-auto text-center text-black">
@@ -54,11 +54,10 @@ const HeroSection = (props: HeroSectionProps) => {
                 {buttonText && (
                   <div className="mt-10 text-center md:text-left">
                     <a
-                      href="#"
-                      className="inline-block px-10 py-1 text-lg font-medium text-inherit border border-blue-700 relative bg-blue-500 hover:bg-inherit"
+                      href="#contact"
+                      className="inline-block px-10 py-1 text-lg font-medium text-inherit border border-blue-700 relative bg-blue-500 hover:bg-inherit hover:-scale-105 transition-all duration-500"
                     >
                       {buttonText}
-                      <span className=""></span>
                     </a>
                   </div>
                 )}

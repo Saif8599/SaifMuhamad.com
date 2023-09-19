@@ -43,19 +43,19 @@ const NavbarBlock: React.FC<NavbarProps> = () => {
         <div className="text-md font-bold text-blue-700 lg:flex-grow">
           <a
             href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
+            className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-1 rounded mr-2 border-blue-500 hover:bg-blue-500 transition-all duration-500"
           >
             Home
           </a>
           <a
-            href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
+            href="#about"
+            className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-1 rounded mr-2 border-blue-500 hover:bg-blue-500 transition-all duration-500"
           >
             About
           </a>
           <a
-            href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
+            href="#contact"
+            className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-1 rounded mr-2 border-blue-500 hover:bg-blue-500 transition-all duration-500"
           >
             Contacts
           </a>
@@ -88,7 +88,7 @@ const NavbarBlock: React.FC<NavbarProps> = () => {
         <div className="flex">
           <a
             href="#"
-            className=" block text-md px-4 py-2 rounded text-blue-700 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0"
+            className="block text-md px-4 py-1 rounded text-blue-700 font-bold hover:text-white mt-4 lg:mt-0 border-blue-500 hover:bg-blue-500 transition-all duration-500"
           >
             login
           </a>
