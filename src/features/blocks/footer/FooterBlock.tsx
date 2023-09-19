@@ -2,9 +2,9 @@ import React from 'react';
 import TwitterIcon from '../../ui/images-and-icons/icons/TwitterIcon';
 import LinkedInIcon from '../../ui/images-and-icons/icons/LinkedInIcon';
 
-export interface FooterProps extends React.HTMLAttributes<HTMLDivElement> {}
+export interface FooterBlockProps extends React.HTMLAttributes<HTMLDivElement> {}
 
-const Footer = (props: FooterProps) => {
+const FooterBlock = (props: FooterBlockProps) => {
   const { className = '', ...restProps } = props;
 
   return (
@@ -40,4 +40,4 @@ const Footer = (props: FooterProps) => {
   );
 };
 
-export default Footer;
+export default FooterBlock;

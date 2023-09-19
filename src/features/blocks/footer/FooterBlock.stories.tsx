@@ -1,15 +1,15 @@
 import { StoryFn } from '@storybook/react';
-import Footer, { FooterProps } from './Footer';
+import FooterBlock, { FooterBlockProps } from './FooterBlock';
 
 export default {
   title: 'Blocks/Footer',
-  component: Footer,
+  component: FooterBlock,
   parameters: {
     layout: "fullscreen",
   },
 };
 
-const Template: StoryFn<FooterProps> = (args) => <Footer {...args} />;
+const Template: StoryFn<FooterBlockProps> = (args) => <FooterBlock {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

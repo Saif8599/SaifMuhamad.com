@@ -53,15 +53,18 @@ const HeroSection = (props: HeroSectionProps) => {
                 )}
                 {buttonText && (
                   <div className="mt-10 text-center md:text-left">
-                  <a
-                    href="#"
-                    className=" bg-blue-500 text-white py-3 px-8 rounded-full hover:bg-blue-600"
-                  >
-                    {buttonText}
-                  </a>
+                    <a
+                      href="#"
+                      className="inline-block px-10 py-1 text-lg font-medium text-inherit border border-blue-700 relative bg-blue-500 hover:bg-inherit"
+                    >
+                      {buttonText}
+                      <span className=""></span>
+                    </a>
                   </div>
                 )}
-                {subtext && <p className="text-sm mt-4">{subtext}</p>}
+                {subtext && (
+                  <p className="text-sm mt-4 md:text-left">{subtext}</p>
+                )}
               </div>
             </div>
           </div>

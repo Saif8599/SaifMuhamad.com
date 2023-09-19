@@ -2,7 +2,7 @@ import React from "react";
 import NavbarBlock from "../features/blocks/navbar/NavbarBlock";
 import HeroSection from "../features/blocks/hero-section/HeroSection";
 import QuoteBlock from "../features/blocks/quote/QuoteBlock";
-import Footer from "../features/blocks/footer/Footer";
+import FooterBlock from "../features/blocks/footer/FooterBlock";
 
 
 const Index: React.FC = () => {
@@ -15,7 +15,7 @@ const Index: React.FC = () => {
           data={{
             title: "Saif Muhamad",
             description: "A Front-end Web developer based in Amsterdam, The Netherlands.",
-            buttonText: "contact me",
+            buttonText: "Contact me",
             imageUrl: "https://picsum.photos/seed/76/1440/810",
           }}
         />
@@ -26,7 +26,7 @@ const Index: React.FC = () => {
             authorSubscript: "Rich Dad, Poor Dad",
           }}
         />
-        <footer/>
+        <FooterBlock/>
       </div>
     </div>
   );
