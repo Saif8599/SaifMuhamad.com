@@ -8,8 +8,8 @@ const ContactBlock = (props: ContactBlockProps) => {
 
   return (
 <div className={`${className}`} {...restProps}>
-  <section className="bg-white text-black px-4 md:p-12" id="contact">
-    <div className="container ml-10 mx-auto">
+  <section className=" text-black px-4 md:p-12" id="contact">
+    <div className="container md:ml-10 mx-auto">
       <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
       <div className="max-w-2xl text-white-1">
         <p className="mb-10">
@@ -21,7 +21,7 @@ const ContactBlock = (props: ContactBlockProps) => {
         </p>
         <a
           href="mailto:ninja_saif@hotmail.com"
-          className="px-10 py-4 text-lg font-medium text-inherit border border-blue-500 hover:bg-blue-500 hover:text-white transition-all duration-500"
+          className="px-10 py-4 text-lg font-medium text-inherit border border-red-500 hover:bg-red-500 hover:text-white transition-all duration-500"
         >
           ninja_saif@hotmail.com
         </a>

@@ -6,7 +6,7 @@ export declare interface HeroSectionJson {
   buttonText?: string;
   subtext?: string;
   backgroundImageUrl?: string;
-  imageUrl: string;
+  imageUrl?: string;
 }
 
 export interface HeroSectionProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -26,21 +26,23 @@ const HeroSection = (props: HeroSectionProps) => {
 
   return (
     <div className={`w-full ${className}`} {...restProps}>
-      <div className="h-full md:h-screen flex items-center">
+      <div className="flex items-center">
         <section
-          className="w-full bg-cover bg-center py-0 md:py-32 md:pl-10 "
+          className="h-full md:h-screen w-full bg-cover bg-center pt-16 md:mt-0 md:py-32 md:pl-10 "
           style={{ backgroundImage: `url('${backgroundImageUrl}')` }}
         >
-          <div className="container mx-auto text-center text-black">
-            <div className="flex flex-col-reverse md:flex-row-reverse items-center">
-              <div className="mt-10 md:p-16">
-                <img
-                  src={imageUrl}
-                  className="h-full w-full object-cover "
-                  alt="Layout Image"
-                />
-              </div>
-              <div className="md:w-1/2 mt-0 md:mt-4">
+          <div className="container mx-auto text-left text-white">
+            <div className="flex items-center mt-20">
+              {imageUrl && (
+                <div className="mt-10 md:p-16">
+                  <img
+                    src={imageUrl}
+                    className="h-full w-full object-cover"
+                    alt="Layout Image"
+                  />
+                </div>
+              )}
+              <div className="md:w-1/2 ml-4 md:mt-4">
                 {title && (
                   <h1 className="text-6xl md:text-left md:text-8xl font-semibold my-10 md:mb-4">
                     {title}
@@ -52,10 +54,10 @@ const HeroSection = (props: HeroSectionProps) => {
                   </p>
                 )}
                 {buttonText && (
-                  <div className="mt-10 text-center md:text-left">
+                  <div className="mt-10 mb-10 text-center md:text-left">
                     <a
                       href="#contact"
-                      className="inline-block px-10 py-1 text-lg font-medium text-inherit border border-blue-700 relative bg-blue-500 hover:bg-inherit hover:-scale-105 transition-all duration-500"
+                      className="inline-block px-10 py-1 text-lg font-medium text-inherit border border-red-700 relative bg-red-500 hover:-scale-105 transition-all duration-500"
                     >
                       {buttonText}
                     </a>

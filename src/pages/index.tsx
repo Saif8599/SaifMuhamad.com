@@ -4,20 +4,20 @@ import HeroSection from "../features/blocks/hero-section/HeroSection";
 import QuoteBlock from "../features/blocks/quote/QuoteBlock";
 import FooterBlock from "../features/blocks/footer/FooterBlock";
 import ContactBlock from "../features/blocks/contact/ContactBlock";
-
+import AboutBlock from "../features/blocks/about/AboutBlock";
 
 const Index: React.FC = () => {
   return (
     <div>
-      <div>
-        <NavbarBlock />
+      <div className="">
+        <NavbarBlock/>
         <HeroSection
-          className="bg-gradient-to-l from-blue-500 to-blue-900"
           data={{
             title: "Saif Muhamad",
-            description: "A Front-end Web developer based in Amsterdam, The Netherlands.",
+            description:
+              "A Front-end Web developer based in Amsterdam, The Netherlands.",
             buttonText: "Contact me",
-            imageUrl: "https://picsum.photos/seed/76/1440/810",
+            backgroundImageUrl: "./assets/travisScott.gif",
           }}
         />
         <QuoteBlock
@@ -27,8 +27,17 @@ const Index: React.FC = () => {
             authorSubscript: "Rich Dad, Poor Dad",
           }}
         />
-        <ContactBlock/>
-        <FooterBlock/>
+        <AboutBlock
+          data={{
+            title: "About Me",
+            description:
+              "I'm a Fullstack Webdeveloper student at ROC of Amsterdam. As a person, I'm eager to learn new skills to improve myself",
+            buttonText: "My Resume",
+            imageUrl: "https://picsum.photos/500/600",
+          }}
+        />
+        <ContactBlock />
+        <FooterBlock />
       </div>
     </div>
   );
