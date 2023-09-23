@@ -10,7 +10,7 @@ const Index: React.FC = () => {
   return (
     <div>
       <div className="">
-        <NavbarBlock/>
+        <NavbarBlock />
         <HeroSection
           data={{
             title: "Saif Muhamad",
@@ -22,21 +22,29 @@ const Index: React.FC = () => {
         />
         <QuoteBlock
           data={{
-            quote: "The single most powerful asset we all have is our mind.",
-            author: "Robert T. Kiyosaki",
-            authorSubscript: "Rich Dad, Poor Dad",
+            quote:
+              "Fuck the money, never leave your people behind. It's never love, no matter what you try.",
+            author: "Travis Scott",
+            authorSubscript: "STOP TRYING TO BE GOD",
           }}
         />
         <AboutBlock
           data={{
             title: "About Me",
             description:
-              "I'm a Fullstack Webdeveloper student at ROC of Amsterdam. As a person, I'm eager to learn new skills to improve myself",
+              "I'm a Front-end Web developer student at ROC of Amsterdam. As a person, I'm eager to learn new skills to improve myself",
             buttonText: "My Resume",
             imageUrl: "https://picsum.photos/500/600",
           }}
         />
-        <ContactBlock />
+        <ContactBlock
+          data={{
+            title: "Get in Touch",
+            description:
+              "Do you want to ask questions? or have some advice for me or just want to say 'Hi' in any case feel free to get in touch with me, I am always open to discussing new projects, creative ideas or opportunities to be part of your visions. The quickest way to reach out to me is via my email.",
+            buttonText: "ninja_saif@hotmail.com",
+          }}
+        />
         <FooterBlock />
       </div>
     </div>

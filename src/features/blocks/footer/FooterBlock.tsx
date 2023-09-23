@@ -12,7 +12,7 @@ const FooterBlock = (props: FooterBlockProps) => {
       <div className="flex justify-center">
         <ul className="flex items-center space-x-4">
           <li className="mr-4">
-            <a href="https://twitter.com/saif8599" title="Link to Twitter Profile">
+            <a href="https://twitter.com/" title="Link to Twitter Profile">
               <TwitterIcon className="h-16" />
             </a>
           </li>
