@@ -26,12 +26,12 @@ const Quote = (props: QuoteProps) => {
         &ldquo;{quote}&rdquo;
       </div>
       {author && (
-        <div className="mt-8 md:mt-10 md:text-2xl font-bold text-gray-900">
+        <div className="mt-8 md:mt-10 md:text-2xl font-bold">
           {author}
         </div>
       )}
       {authorSubscript && (
-        <div className="text-gray-900">{authorSubscript}</div>
+        <div className="">{authorSubscript}</div>
       )}
     </blockquote>
   );

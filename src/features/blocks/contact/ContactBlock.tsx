@@ -17,7 +17,7 @@ const ContactBlock = (props: ContactBlockProps) => {
 
   return (
     <div className={`${className}`} {...restProps}>
-      <section className=" text-black px-4 md:p-12" id="contact">
+      <section className=" px-4 md:p-12" id="contact">
         <div className="container md:ml-10 mx-auto">
           <h2 className="text-3xl font-bold mb-8">{title}</h2>
           <div className="max-w-2xl text-white-1">

@@ -20,7 +20,7 @@ const Index: React.FC = () => {
             backgroundImageUrl: "./assets/travisScott.gif",
           }}
         />
-        <QuoteBlock
+        <QuoteBlock className="bg-black text-white"
           data={{
             quote:
               "Fuck the money, never leave your people behind. It's never love, no matter what you try.",
@@ -28,7 +28,7 @@ const Index: React.FC = () => {
             authorSubscript: "STOP TRYING TO BE GOD",
           }}
         />
-        <AboutBlock
+        <AboutBlock className="bg-black text-white"
           data={{
             title: "About Me",
             description:
@@ -37,7 +37,7 @@ const Index: React.FC = () => {
             imageUrl: "https://picsum.photos/500/600",
           }}
         />
-        <ContactBlock
+        <ContactBlock className="bg-black text-white"
           data={{
             title: "Get in Touch",
             description:
@@ -45,7 +45,7 @@ const Index: React.FC = () => {
             buttonText: "ninja_saif@hotmail.com",
           }}
         />
-        <FooterBlock />
+        <FooterBlock className="bg-black text-white" />
       </div>
     </div>
   );

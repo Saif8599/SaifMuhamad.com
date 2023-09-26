@@ -18,7 +18,7 @@ const AnimationBlock = (props: AnimationBlockProps) => {
 
   return (
     <div className={`${className}`} {...restProps}>
-      <div>
+      <div className='overflow-hidden'>
         <button onClick={handleButtonClick}>Toggle Animation</button>
         <motion.div
           className="content"
