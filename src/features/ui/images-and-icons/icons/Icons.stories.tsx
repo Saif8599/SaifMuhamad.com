@@ -12,6 +12,7 @@ import LogoIcon from './LogoIcon';
 import PlayIcon from './PlayIcon';
 import TimesIcon from './Times';
 import TwitterIcon from './TwitterIcon';
+import MouseIcon from './MouseIcon';
 
 export default {
   title: 'Images and Icons/Icons',
@@ -31,3 +32,4 @@ export const Logo = () => <LogoIcon />;
 export const Play = () => <PlayIcon />;
 export const Times = () => <TimesIcon />;
 export const Twitter = () => <TwitterIcon />;
+export const Mouse = () => <MouseIcon />;

@@ -19,8 +19,8 @@ const AboutBlock = (props: AboutBlockProps) => {
       <section className="px-4 md:p-12 ml-0 md:ml-10" id="about">
         <h2 className="text-3xl font-bold mb-8">{title}</h2>
         <div
-          className={`flex ${
-            !imageUrl ? "flex-col" : "md:flex-row-reverse items-center"
+          className={`flex-col md:flex ${
+            !imageUrl ? "" : "md:flex-row-reverse items-center"
           } `}
         >
           <div className="md:flex-1 max-w-xl mb-8 md:mb-0">
@@ -32,10 +32,9 @@ const AboutBlock = (props: AboutBlockProps) => {
               {buttonText}
             </a>
           </div>
-
           {imageUrl && (
-            <div className="md:flex-1 mr-0 md:mr-6">
-              <img className="w-auto" src={imageUrl} alt="" />
+            <div className="md:flex-1 pb-8 mr-0 md:mr-6">
+              <img className="w-auto" src={imageUrl} alt="image" />
             </div>
           )}
         </div>

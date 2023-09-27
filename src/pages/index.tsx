@@ -5,11 +5,13 @@ import QuoteBlock from "../features/blocks/quote/QuoteBlock";
 import FooterBlock from "../features/blocks/footer/FooterBlock";
 import ContactBlock from "../features/blocks/contact/ContactBlock";
 import AboutBlock from "../features/blocks/about/AboutBlock";
+import AnimationBlock from "../features/blocks/animation/ScrollLinkedWordTyper";
 
 const Index: React.FC = () => {
   return (
     <div>
-      <div className="">
+      <div>
+        <AnimationBlock className="bg-black text-white" text={"Fuck the money, never leave your people behind. It's never love, no matter what you try."}/>
         <NavbarBlock />
         <HeroSection
           data={{
@@ -20,7 +22,8 @@ const Index: React.FC = () => {
             backgroundImageUrl: "./assets/travisScott.gif",
           }}
         />
-        <QuoteBlock className="bg-black text-white"
+        <QuoteBlock
+          className="bg-black text-white"
           data={{
             quote:
               "Fuck the money, never leave your people behind. It's never love, no matter what you try.",
@@ -28,16 +31,18 @@ const Index: React.FC = () => {
             authorSubscript: "STOP TRYING TO BE GOD",
           }}
         />
-        <AboutBlock className="bg-black text-white"
+        <AboutBlock
+          className="bg-black text-white"
           data={{
             title: "About Me",
             description:
               "I'm a Front-end Web developer student at ROC of Amsterdam. As a person, I'm eager to learn new skills to improve myself",
             buttonText: "My Resume",
-            imageUrl: "https://picsum.photos/500/600",
+            imageUrl: "https://plchldr.co/i//640x360",
           }}
         />
-        <ContactBlock className="bg-black text-white"
+        <ContactBlock
+          className="bg-black text-white"
           data={{
             title: "Get in Touch",
             description:
