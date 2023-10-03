@@ -5,13 +5,16 @@ import QuoteBlock from "../features/blocks/quote/QuoteBlock";
 import FooterBlock from "../features/blocks/footer/FooterBlock";
 import ContactBlock from "../features/blocks/contact/ContactBlock";
 import AboutBlock from "../features/blocks/about/AboutBlock";
-import AnimationBlock from "../features/blocks/animation/ScrollLinkedWordTyper";
+import ScrollLinkedWordTyper from "../features/scrollytelling/ScrollLinkedWordTyper";
 
 const Index: React.FC = () => {
   return (
     <div>
       <div>
-        <AnimationBlock className="bg-black text-white" text={"Fuck the money, never leave your people behind. It's never love, no matter what you try."}/>
+        <ScrollLinkedWordTyper
+          className="bg-black text-white"
+          text="Fuck the money, never leave your people behind. It's never love, no matter what you try."
+        />
         <NavbarBlock />
         <HeroSection
           data={{
@@ -36,9 +39,9 @@ const Index: React.FC = () => {
           data={{
             title: "About Me",
             description:
-              "I'm a Front-end Web developer student at ROC of Amsterdam. As a person, I'm eager to learn new skills to improve myself",
+              "Greetings!  I'm a software developer passionate about building a better web, creating great experiences for end users.",
             buttonText: "My Resume",
-            imageUrl: "https://plchldr.co/i//640x360",
+            imageUrl: "http://via.placeholder.com/640x360",
           }}
         />
         <ContactBlock

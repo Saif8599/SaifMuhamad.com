@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
+import MouseIcon from "../ui/images-and-icons/icons/MouseIcon";
 import {
   AnimatePresence,
   motion,
   useScroll,
   useTransform,
 } from "framer-motion";
-import MouseIcon from "../../ui/images-and-icons/icons/MouseIcon";
 
 export interface ScrollLinkedWordTyperProps
   extends React.HTMLAttributes<HTMLDivElement> {
@@ -71,8 +71,11 @@ const ScrollLinkedWordTyper = (props: ScrollLinkedWordTyperProps) => {
             ))}
           </motion.div>
         </AnimatePresence>
-        <div className="absolute flex items-center m-1.5 md:m-3 bottom-8 md:bottom-12 font-extrabold">
-          <MouseIcon className="mr-4" />
+        <div className="absolute flex items-center m-1.5 md:m-3 bottom-8 md:bottom-12 font-extrabold animate-pulse">
+          <div className="animate-bounce">
+            <MouseIcon className="mr-4" />
+            <div className=""></div>
+          </div>
           Scroll down
         </div>
       </div>
