@@ -24,7 +24,9 @@ const AboutBlock = (props: AboutBlockProps) => {
           } `}
         >
           <div className="md:flex-1 max-w-xl mb-8 md:mb-0">
-            <p className="text-lg mb-8">{description}</p>
+            <p className="text-lg mb-8">
+              {description}
+            </p>
             <a
               href="https://www.linkedin.com/in/saif-muhamad-b919371b5/"
               className="px-6 md:px-10 py-2 text-lg font-medium text-inherit border border-red-500 hover:bg-red-500 hover:text-white transition-all duration-500"

@@ -38,18 +38,26 @@ const Index: React.FC = () => {
           className="bg-black text-white"
           data={{
             title: "About Me",
-            description:
-              "Greetings!  I'm a software developer passionate about building a better web, creating great experiences for end users.",
+            description: `
+            Greetings!
+            I'm a software developer passionate about building a better web,
+            creating great experiences for end users, and trying to solve
+            real-world problems with an eye for design.
+            As a person, I'm deeply committed to continuous self-improvement and acquiring new skills.
+            In my world, code is the canvas, and creativity knows no bounds.`,
             buttonText: "My Resume",
-            imageUrl: "http://via.placeholder.com/640x360",
+            imageUrl: "https://placebear.com/g/600/300",
           }}
         />
+
         <ContactBlock
           className="bg-black text-white"
           data={{
             title: "Get in Touch",
             description:
-              "Do you want to ask questions? or have some advice for me or just want to say 'Hi' in any case feel free to get in touch with me, I am always open to discussing new projects, creative ideas or opportunities to be part of your visions. The quickest way to reach out to me is via my email.",
+              `Do you want to ask questions? or have some advice for me or just want to say 'Hi' in any case feel free to get in touch with me,
+              I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+              The quickest way to reach out to me is via my email.`,
             buttonText: "ninja_saif@hotmail.com",
           }}
         />
