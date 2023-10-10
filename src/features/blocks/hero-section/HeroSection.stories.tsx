@@ -15,12 +15,11 @@ export const Default = Template.bind({});
 
 Default.args = {
   data: {
-    title: "Welcome",
+    title: "Lorem Ipsum",
     description: "Quote Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    buttonText: "click me",
+    buttonText: "Lorem Ipsum",
     subtext: "",
-    backgroundImageUrl: "https://picsum.photos/500/600",
-    imageUrl: "https://picsum.photos/500/600",
+    backgroundImageUrl: "http://via.placeholder.com/640x360",
   },
 };
 

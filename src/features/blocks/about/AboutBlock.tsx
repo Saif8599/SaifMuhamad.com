@@ -1,4 +1,5 @@
 import React from "react";
+import RichText from "../../ui/typography/rich-text/RichText";
 
 export declare interface AboutBlockJson {
   imageUrl?: string;
@@ -24,11 +25,10 @@ const AboutBlock = (props: AboutBlockProps) => {
           } `}
         >
           <div className="md:flex-1 max-w-xl mb-8 md:mb-0">
-            <p className="text-lg mb-8">{description}</p>
+            <RichText className="text-lg mb-4" html={description} />
             <a
               href="https://drive.google.com/file/d/14iHK58KKoClCOOTEnBMLJWjUz2MmtI2Q/view?usp=drive_link"
               target="_blank"
-              download="SaifCurriculumVitae.docx"
               className="px-6 md:px-10 py-2 text-lg font-medium text-inherit border border-red-500 hover:bg-red-500 hover:text-white transition-all duration-500"
             >
               {buttonText}

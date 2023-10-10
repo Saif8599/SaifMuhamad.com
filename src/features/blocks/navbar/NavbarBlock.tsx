@@ -56,7 +56,7 @@ const NavbarBlock: React.FC<NavbarProps> = () => {
           isNavOpen ? "block" : "hidden"
         }`}
       >
-        <div className="text-md font-bold text-red-700 lg:flex-grow">
+        <div className="text-md font-bold text-red-700 lg:flex-grow font-mono">
           <a
             href="#"
             className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-1 rounded mr-2 border-red-500 transition-all duration-500"
@@ -76,7 +76,7 @@ const NavbarBlock: React.FC<NavbarProps> = () => {
             Contact
           </a>
         </div>
-        <div className="relative mr-2 text-gray-600 lg:block hidden">
+        <div className="relative mr-2 text-gray-600 lg:block hidden font-mono">
           <input
             className="border-2 border-gray-300 bg-white h-10 pl-2 pr-8 rounded-lg text-sm focus:outline-none"
             type="search"
@@ -99,7 +99,7 @@ const NavbarBlock: React.FC<NavbarProps> = () => {
             </svg>
           </button>
         </div>
-        <div className="flex">
+        <div className="flex font-mono">
           <a
             href="#"
             className="block text-md px-4 py-1 rounded text-red-700 font-bold hover:text-white mt-4 lg:mt-0 border-red-500 transition-all duration-500"
