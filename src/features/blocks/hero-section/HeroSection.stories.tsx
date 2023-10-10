@@ -18,7 +18,7 @@ Default.args = {
     title: "Welcome",
     description: "Quote Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     buttonText: "click me",
-    subtext: "subtext",
+    subtext: "",
     backgroundImageUrl: "https://picsum.photos/500/600",
     imageUrl: "https://picsum.photos/500/600",
   },

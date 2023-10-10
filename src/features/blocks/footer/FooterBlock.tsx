@@ -12,22 +12,22 @@ const FooterBlock = (props: FooterBlockProps) => {
       <div className="flex justify-center">
         <ul className="flex items-center space-x-4">
           <li className="mr-4">
-            <a href="https://twitter.com/" title="Link to Twitter Profile">
+            <a href="https://twitter.com/" target="_blank" title="Link to Twitter Profile">
               <TwitterIcon className="h-16" />
             </a>
           </li>
           <li className="mr-4">
-            <a href="https://github.com/Saif8599" title="Link to Github Profile">
+            <a href="https://github.com/Saif8599" target="_blank" title="Link to Github Profile">
             github
             </a>
           </li>
           <li className="mr-4">
-            <a href="https://www.instagram.com/blacky_cherry/" title="Link to Instagram Profile">
+            <a href="https://www.instagram.com/blacky_cherry/" target="_blank" title="Link to Instagram Profile">
             instagram
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/saif-muhamad-b919371b5/" title="Link to LinkedIn Profile">
+            <a href="https://www.linkedin.com/in/saif-muhamad-b919371b5/" target="_blank" title="Link to LinkedIn Profile">
               <LinkedInIcon className="h-16" />
             </a>
           </li>

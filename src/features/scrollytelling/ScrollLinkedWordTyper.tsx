@@ -25,6 +25,7 @@ const ScrollLinkedWordTyper = (props: ScrollLinkedWordTyperProps) => {
     className = "",
     ...restProps
   } = props;
+
   const containerRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({ target: containerRef });
   const words = text.split(" ");

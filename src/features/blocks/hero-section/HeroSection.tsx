@@ -1,4 +1,5 @@
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 
 export declare interface HeroSectionJson {
   title: string;
@@ -44,8 +45,17 @@ const HeroSection = (props: HeroSectionProps) => {
               )}
               <div className="md:w-1/2 ml-4 md:mt-4">
                 {title && (
-                  <h1 className="text-6xl md:text-left md:text-8xl font-semibold my-10 md:mb-4">
-                    {title}
+                  <h1 className="text-6xl inline md:block md:text-left md:text-8xl font-semibold my-10 md:mb-4">
+                    <TypeAnimation
+                      sequence={[
+                        title, // Types the 'title' prop
+                        5000, // Waits 5s
+                        "", // Empty string to clear the text
+                      ]}
+                      speed={20}
+                      cursor={true}
+                      repeat={Infinity}
+                    />
                   </h1>
                 )}
                 {description && (
