@@ -58,19 +58,19 @@ const NavbarBlock: React.FC<NavbarProps> = () => {
       >
         <div className="text-md font-bold text-red-700 lg:flex-grow font-mono">
           <a
-            href="#"
+            href="/#"
             className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-1 rounded mr-2 border-red-500 transition-all duration-500"
           >
             Home
           </a>
           <a
-            href="#about"
+            href="/#about"
             className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-1 rounded mr-2 border-red-500 transition-all duration-500"
           >
             About
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-1 rounded mr-2 border-red-500 transition-all duration-500"
           >
             Contact
@@ -78,8 +78,8 @@ const NavbarBlock: React.FC<NavbarProps> = () => {
         </div>
         <div className="flex font-mono">
           <a
-            href="YouCantGetInHaHa"
-            className="block text-md px-4 py-1 rounded text-red-700 font-bold hover:text-white mt-4 lg:mt-0 border-red-500 transition-all duration-500"
+            href="/login"
+            className="block px-4 py-1 rounded text-red-700 font-bold hover:text-white mt-4 lg:mt-0 border-red-500 transition-all duration-500"
           >
             Login
           </a>
