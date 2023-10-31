@@ -5,7 +5,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    // Handle login logic here
+    alert("You cant pass");
   };
 
   return (

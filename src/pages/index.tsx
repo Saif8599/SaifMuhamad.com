@@ -6,6 +6,7 @@ import FooterBlock from "../features/blocks/footer/FooterBlock";
 import ContactBlock from "../features/blocks/contact/ContactBlock";
 import AboutBlock from "../features/blocks/about/AboutBlock";
 import ScrollLinkedWordTyper from "../features/scrollytelling/ScrollLinkedWordTyper";
+import ProjectsBlock from "../features/blocks/project/ProjectsBlock";
 
 const Index: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const Index: React.FC = () => {
           className="bg-black text-white font-mono"
           text="Fuck the money, never leave your people behind. It's never love, no matter what you try."
         />
-        <NavbarBlock/>
+        <NavbarBlock />
         <HeroSection
           data={{
             title: "Saif Muhamad",
@@ -51,16 +52,36 @@ const Index: React.FC = () => {
             imageUrl: "https://placebear.com/g/600/300",
           }}
         />
+        <ProjectsBlock
+          className="bg-black text-white"
+          projects={[
+            {
+              title: "Project 1",
+              description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget urna tortor. Duis at ex non nunc fringilla tempor.",
+              link: "",
+              linkText: "View Project 1",
+              image: "http://via.placeholder.com/640x361",
+            },
+            {
+              title: "Project 2",
+              description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget urna tortor. Duis at ex non nunc fringilla tempor.",
+              link: "",
+              linkText: "View Project 2",
+              image: "http://via.placeholder.com/640x362",
+            },
+          ]}
+        />
         <ContactBlock
           className="bg-black text-white"
           data={{
             title: "Get in Touch",
-            description:
-              `Do you want to ask questions? or have some advice for me or just want to say 'Hi'
+            description: `Do you want to ask questions? or have some advice for me or just want to say 'Hi'
               in any case feel free to get in touch with me.
               I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
               The quickest way to reach out to me is via my email.`,
-            buttonText: "ninja_saif@hotmail.com",
+            buttonText: "SaifzMuhamad@gmail.com",
           }}
         />
         <FooterBlock className="bg-black text-white font-mono" />

@@ -45,7 +45,7 @@ const HeroSection = (props: HeroSectionProps) => {
               )}
               <div className="md:w-1/2 ml-4 md:mt-4">
                 {title && (
-                  <h1 className="text-6xl inline md:block md:text-left md:text-8xl font-semibold my-10 md:mb-4">
+                  <h1 className="text-5xl inline md:block md:text-left md:text-8xl font-semibold my-10 md:mb-4">
                     <TypeAnimation
                       sequence={[
                         title, // Types the 'title' prop
@@ -67,7 +67,7 @@ const HeroSection = (props: HeroSectionProps) => {
                   <div className="mt-10 mb-10 text-center md:text-left">
                     <a
                       href="#contact"
-                      className="inline-block px-10 py-1 text-lg font-medium text-inherit border border-red-700 relative bg-red-500 hover:-scale-105 transition-all duration-500"
+                      className="inline-block px-10 py-1 text-lg font-medium text-inherit border border-red-700 relative bg-red-500 hover:scale-105 transition-all duration-500"
                     >
                       {buttonText}
                     </a>
