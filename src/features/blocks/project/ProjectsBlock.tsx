@@ -27,15 +27,15 @@ const ProjectsBlock = (props: ProjectsBlockProps) => {
 
   return (
     <div className={`${className}`} {...restProps}>
-      <div className="min-h-screen flex justify-center items-center">
+      <div className="h-full ax-h-screen">
         <section className="px-4 md:p-12 ml-0 md:ml-10" id="projects">
           <h2 className="text-3xl font-bold mb-8">My Projects</h2>
-          <div className="mx-auto flex flex-col md:flex-row gap-10 items-center">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-16 items-center">
             <div className="w-full md:w-1/2 flex flex-wrap">
               {projects.map((project, index) => (
                 <div
                   key={index}
-                  className="mb-4 w-full md:w-1/2 rounded-lg shadow-md p-4 cursor-pointer"
+                  className="mb-4 w-full md:w-1/2 max-w-xs rounded-lg shadow-md p-4 cursor-pointer"
                   onClick={() => handleProjectSelection(project)}
                 >
                   <div className="mb-2">
@@ -49,9 +49,9 @@ const ProjectsBlock = (props: ProjectsBlockProps) => {
                 </div>
               ))}
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 max-w-sm">
               {selectedProject && (
-                <div className=" rounded-lg shadow-md p-4">
+                <div className="rounded-lg shadow-md p-4 mb-10">
                   <img
                     src={selectedProject.image}
                     alt={selectedProject.title}
