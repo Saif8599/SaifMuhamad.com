@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import RichText from "../../ui/typography/rich-text/RichText";
+import useBreakpoints from "../../media-query/useBreakpoints";
 
 export interface ProjectsBlock {
+  id: string;
   title: string;
   description: string;
   link: string;
@@ -16,6 +18,7 @@ export interface ProjectsBlockProps
 
 const ProjectsBlock = (props: ProjectsBlockProps) => {
   const { projects, className = "", ...restProps } = props;
+  const { isSm } = useBreakpoints();
 
   const [selectedProject, setSelectedProject] = useState<ProjectsBlock | null>(
     projects[0]
@@ -23,19 +26,29 @@ const ProjectsBlock = (props: ProjectsBlockProps) => {
 
   const handleProjectSelection = (project: ProjectsBlock) => {
     setSelectedProject(project);
+    if (!isSm) {
+      const element = document.getElementById(project.id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   };
 
   return (
-    <div className={`${className}`} {...restProps}>
+    <div className={className} {...restProps}>
       <div className="h-full ax-h-screen">
         <section className="px-4 md:p-12 ml-0 md:ml-10" id="projects">
           <h2 className="text-3xl font-bold mb-8">My Projects</h2>
-          <div className="flex flex-col md:flex-row gap-6 md:gap-16 items-center">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-16 md:items-center">
             <div className="w-full md:w-1/2 flex flex-wrap">
-              {projects.map((project, index) => (
+              {projects.map((project) => (
                 <div
-                  key={index}
-                  className="mb-4 w-full md:w-1/2 max-w-xs rounded-lg shadow-md p-4 cursor-pointer"
+                  key={project.id}
+                  className={`mb-4 w-full md:w-1/2 max-w-xs rounded-lg shadow-md p-4 cursor-pointer ${
+                    selectedProject && selectedProject.id === project.id
+                      ? "text-red-500 shadow-red-600"
+                      : ""
+                  }`}
                   onClick={() => handleProjectSelection(project)}
                 >
                   <div className="mb-2">
@@ -49,9 +62,15 @@ const ProjectsBlock = (props: ProjectsBlockProps) => {
                 </div>
               ))}
             </div>
-            <div className="w-full md:w-1/2 max-w-sm">
+            <div
+              className="w-full md:w-1/2 max-w-sm h-full"
+              style={{ height: "500px" }}
+            >
               {selectedProject && (
-                <div className="rounded-lg shadow-md p-4 mb-10">
+                <div
+                  id={selectedProject.id}
+                  className="rounded-lg shadow-md p-4 mb-10 shadow-red-600"
+                >
                   <img
                     src={selectedProject.image}
                     alt={selectedProject.title}
@@ -61,13 +80,13 @@ const ProjectsBlock = (props: ProjectsBlockProps) => {
                     {selectedProject.title}
                   </h2>
                   <RichText
-                    className="text-sm"
+                    className="text-sm mt-4"
                     html={selectedProject.description}
                   />
                   {selectedProject.linkText && (
                     <a
                       href={selectedProject.link}
-                      className="block mt-4 px-4 py-2 text-sm font-medium text-white bg-red-500 rounded-lg text-center hover:bg-red-600 transition-all duration-300"
+                      className="block mt-10 shadow-red-600 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out"
                     >
                       {selectedProject.linkText}
                     </a>

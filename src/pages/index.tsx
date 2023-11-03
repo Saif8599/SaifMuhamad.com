@@ -56,20 +56,26 @@ const Index: React.FC = () => {
           className="bg-black text-white"
           projects={[
             {
+              id: "1",
               title: "Project 1",
-              description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget urna tortor. Duis at ex non nunc fringilla tempor.",
+              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Vestibulum eget urna tortor.
+                 Duis at ex non nunc fringilla tempor.
+                `,
               link: "",
               linkText: "View Project 1",
-              image: "http://via.placeholder.com/640x361",
+              image: "https://picsum.photos/id/1/200/300?grayscale&blur=1",
             },
             {
+              id: "2",
               title: "Project 2",
-              description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget urna tortor. Duis at ex non nunc fringilla tempor.",
+              description: `Sed euismod ultrices lacus,
+                ut feugiat neque congue a.
+                Mauris dapibus libero ac tristique rhoncus.
+                `,
               link: "",
               linkText: "View Project 2",
-              image: "http://via.placeholder.com/640x362",
+              image: "https://picsum.photos/id//200/300?grayscale&blur=2",
             },
           ]}
         />

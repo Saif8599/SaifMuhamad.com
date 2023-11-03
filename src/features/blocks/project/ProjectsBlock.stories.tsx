@@ -15,9 +15,10 @@ Default.args = { projects: getProjects() };
 
 Default.storyName = "Projects";
 
-function getProjects(): ProjectsBlockProps['projects'] {
+function getProjects(): ProjectsBlockProps["projects"] {
   return [
     {
+      id: "1",
       title: "Project 1",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget urna tortor. Duis at ex non nunc fringilla tempor.",
@@ -26,6 +27,7 @@ function getProjects(): ProjectsBlockProps['projects'] {
       image: "http://via.placeholder.com/640x361",
     },
     {
+      id: "2",
       title: "Project 2",
       description:
         "Sed euismod ultrices lacus, ut feugiat neque congue a. Mauris dapibus libero ac tristique rhoncus.",
@@ -34,6 +36,7 @@ function getProjects(): ProjectsBlockProps['projects'] {
       image: "http://via.placeholder.com/640x362",
     },
     {
+      id: "3",
       title: "Project 3",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget urna tortor. Duis at ex non nunc fringilla tempor.",
@@ -42,6 +45,7 @@ function getProjects(): ProjectsBlockProps['projects'] {
       image: "http://via.placeholder.com/640x363",
     },
     {
+      id: "4",
       title: "Project 4",
       description:
         "Sed euismod ultrices lacus, ut feugiat neque congue a. Mauris dapibus libero ac tristique rhoncus.",
@@ -49,6 +53,5 @@ function getProjects(): ProjectsBlockProps['projects'] {
       linkText: "View Project 4",
       image: "http://via.placeholder.com/640x364",
     },
-
   ];
 }
