@@ -57,25 +57,26 @@ const Index: React.FC = () => {
           projects={[
             {
               id: "1",
-              title: "Project 1",
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Vestibulum eget urna tortor.
-                 Duis at ex non nunc fringilla tempor.
+              title: "Hotel ter Tuin",
+              description: `Hotel ter Tuin is a student project focused on creating a system for booking hotel rooms.
+              Users can select rooms, set check-in and check-out dates, and make reservations.
+              It includes an admin login using specific credentials and a Control Management System (CMS) to oversee reservation details.
+              Admins can view and edit reservation information, with instant updates reflected in the database.
                 `,
-              link: "",
-              linkText: "View Project 1",
-              image: "https://picsum.photos/id/1/200/300?grayscale&blur=1",
+              link: "https://github.com/Saif8599/HotelterTuin",
+              linkText: "Github",
+              image: "./assets/hotelterTuinFrontPage.png",
             },
             {
               id: "2",
-              title: "Project 2",
-              description: `Sed euismod ultrices lacus,
-                ut feugiat neque congue a.
-                Mauris dapibus libero ac tristique rhoncus.
+              title: "SaifMuhamad.nl",
+              description: `
+              SaifMuhamad.nl is my portfolio website, showcasing my professional projects and skills in an easy-to-navigate format.
+              It's designed for visitors to explore my work and capabilities for career opportunities and networking.
                 `,
-              link: "",
-              linkText: "View Project 2",
-              image: "https://picsum.photos/id//200/300?grayscale&blur=2",
+              link: "https://github.com/Saif8599/SaifMuhamad.nl",
+              linkText: "Github",
+              image: "./assets/saifmuhamad.nlFrontPage.png",
             },
           ]}
         />
