@@ -7,6 +7,7 @@ import ContactBlock from "../features/blocks/contact/ContactBlock";
 import AboutBlock from "../features/blocks/about/AboutBlock";
 import ScrollLinkedWordTyper from "../features/scrollytelling/ScrollLinkedWordTyper";
 import ProjectsBlock from "../features/blocks/project/ProjectsBlock";
+import TechStackBlock from "../features/blocks/techstack/TechStackBlock";
 
 const Index: React.FC = () => {
   return (
@@ -77,6 +78,53 @@ const Index: React.FC = () => {
               link: "https://github.com/Saif8599/SaifMuhamad.nl",
               linkText: "Github",
               image: "./assets/saifmuhamad.nlFrontPage.png",
+            },
+          ]}
+        />
+        <TechStackBlock
+          className="bg-black text-white"
+          title={"My Tech Stack"}
+          description={"A collection of technologies I frequently use:"}
+          techStackItems={[
+            {
+              id: "1",
+              title: "Linear",
+              description:
+                "A modern, project management tool for high-performing teams.",
+              image: "https://via.placeholder.com/150",
+            },
+            {
+              id: "2",
+              title: "Next.js",
+              description:
+                "A React framework for production with hybrid static & server rendering.",
+              image: "https://via.placeholder.com/150",
+            },
+            {
+              id: "3",
+              title: "React",
+              description: "A JavaScript library for building user interfaces.",
+              image: "https://via.placeholder.com/150",
+            },
+            {
+              id: "4",
+              title: "Storybook",
+              description:
+                "An open-source tool for developing UI components in isolation for React.",
+              image: "https://via.placeholder.com/150",
+            },
+            {
+              id: "5",
+              title: "Framer Motion",
+              description: "A production-ready motion library for React.",
+              image: "https://via.placeholder.com/150",
+            },
+            {
+              id: "6",
+              title: "MySQL",
+              description:
+                "An open-source relational database management system.",
+              image: "https://via.placeholder.com/150",
             },
           ]}
         />

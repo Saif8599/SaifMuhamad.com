@@ -44,8 +44,8 @@ const ProjectsBlock = (props: ProjectsBlockProps) => {
   };
   return (
     <div className={className} {...restProps}>
-      <div className="h-full ax-h-screen">
-        <section className="px-4 md:p-12 ml-0 md:ml-10" id="projects">
+      <div className="h-full">
+        <section className="px-4 md:p-12 ml-0 md:ml-10 pb-10" id="projects">
           <h2 className="text-3xl font-bold mb-8">My Projects</h2>
           <div className="flex flex-col md:flex-row gap-6 md:gap-16 md:items-center">
             <div className="w-full md:w-1/2 flex flex-wrap">
@@ -54,7 +54,7 @@ const ProjectsBlock = (props: ProjectsBlockProps) => {
                   key={project.id}
                   className={`mb-4 w-full md:w-1/2 max-w-xs rounded-lg shadow-md p-4 cursor-pointer ${
                     selectedProject && selectedProject.id === project.id
-                      ? "text-red-500 shadow-red-600"
+                      ? "text-red-700 shadow-red-600"
                       : ""
                   }`}
                   onClick={() => handleProjectSelection(project)}
@@ -77,7 +77,7 @@ const ProjectsBlock = (props: ProjectsBlockProps) => {
               {selectedProject && (
                 <div
                   id={selectedProject.id}
-                  className="rounded-lg shadow-md p-4 mb-10 shadow-red-600"
+                  className="rounded-lg shadow-md p-4 shadow-red-600"
                 >
                   <img
                     src={selectedProject.image}
