@@ -91,40 +91,46 @@ const Index: React.FC = () => {
               title: "Linear",
               description:
                 "A modern, project management tool for high-performing teams.",
-              image: "https://via.placeholder.com/150",
+              image: "./assets/linearAppLogo.png",
+              link: "https://linear.app",
             },
             {
               id: "2",
               title: "Next.js",
               description:
                 "A React framework for production with hybrid static & server rendering.",
-              image: "https://via.placeholder.com/150",
+              image: "./assets/nextJSLogo.png",
+              link: "https://nextjs.org",
             },
             {
               id: "3",
               title: "React",
               description: "A JavaScript library for building user interfaces.",
-              image: "https://via.placeholder.com/150",
+              image: "./assets/reactLogo.png",
+              link: "https://reactjs.org",
             },
             {
               id: "4",
               title: "Storybook",
               description:
                 "An open-source tool for developing UI components in isolation for React.",
-              image: "https://via.placeholder.com/150",
+              image: "./assets/storybookLogo.png",
+              link: "https://storybook.js.org",
             },
             {
               id: "5",
               title: "Framer Motion",
               description: "A production-ready motion library for React.",
-              image: "https://via.placeholder.com/150",
+              image: "./assets/framerMotionLogo.png",
+              link: "https://www.framer.com/motion/",
             },
             {
               id: "6",
               title: "MySQL",
               description:
                 "An open-source relational database management system.",
-              image: "https://via.placeholder.com/150",
+              image: "./assets/MySqlLogo.png",
+              link: "https://www.mysql.com",
             },
           ]}
         />

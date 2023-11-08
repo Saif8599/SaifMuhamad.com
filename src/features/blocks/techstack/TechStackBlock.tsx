@@ -4,7 +4,8 @@ export interface TechStackItem {
   id: string;
   title: string;
   description: string;
-  image?: string;
+  image: string;
+  link: string;
 }
 
 export interface TechStackBlockProps
@@ -30,9 +31,11 @@ const TechStackBlock = (props: TechStackBlockProps) => {
         <p className="text-lg font-mono mb-6">{description}</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {techStackItems.map((item) => (
-            <div
+            <a
               key={item.id}
-              className="rounded-lg overflow-hidden shadow-md hover:bg-gray-600 shadow-red-600 transition duration-300 ease-in-out"
+              href={item.link}
+              target="_blank"
+              className="rounded-lg overflow-hidden shadow-md hover:bg-gray-600 shadow-red-600 transition duration-300 ease-in-out block"
             >
               <div className="flex items-center p-4 cursor-pointer">
                 {item.image && (
@@ -49,7 +52,7 @@ const TechStackBlock = (props: TechStackBlockProps) => {
                   <p className="text-sm">{item.description}</p>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </section>

@@ -17,29 +17,48 @@ Default.args = {
   techStackItems: [
     {
       id: "1",
-      title: "React",
-      description: "A JavaScript library for building user interfaces.",
-      image: "https://via.placeholder.com/150",
+      title: "Linear",
+      description:
+        "A modern, project management tool for high-performing teams.",
+      image: "./assets/linearAppLogo.png",
+      link: "https://linear.app",
     },
     {
       id: "2",
-      title: "Node.js",
+      title: "Next.js",
       description:
-        "An open-source, cross-platform JavaScript run-time environment.",
-      image: "https://via.placeholder.com/150",
+        "A React framework for production with hybrid static & server rendering.",
+      image: "./assets/nextJSLogo.png",
+      link: "https://nextjs.org",
     },
     {
       id: "3",
       title: "React",
       description: "A JavaScript library for building user interfaces.",
-      image: "https://via.placeholder.com/150",
+      image: "./assets/reactLogo.png",
+      link: "https://reactjs.org",
     },
     {
       id: "4",
-      title: "Node.js",
+      title: "Storybook",
       description:
-        "An open-source, cross-platform JavaScript run-time environment.",
-      image: "https://via.placeholder.com/150",
+        "An open-source tool for developing UI components in isolation for React.",
+      image: "./assets/storybookLogo.png",
+      link: "https://storybook.js.org",
+    },
+    {
+      id: "5",
+      title: "Framer Motion",
+      description: "A production-ready motion library for React.",
+      image: "./assets/framerMotionLogo.png",
+      link: "https://www.framer.com/motion/",
+    },
+    {
+      id: "6",
+      title: "MySQL",
+      description: "An open-source relational database management system.",
+      image: "./assets/MySqlLogo.png",
+      link: "https://www.mysql.com",
     },
   ],
 };
