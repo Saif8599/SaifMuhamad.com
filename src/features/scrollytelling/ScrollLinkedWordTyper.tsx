@@ -72,7 +72,7 @@ const ScrollLinkedWordTyper = (props: ScrollLinkedWordTyperProps) => {
             ))}
           </motion.div>
         </AnimatePresence>
-        <div className="absolute flex items-center m-1.5 md:m-3 bottom-8 md:bottom-12 font-extrabold animate-pulse">
+        <div className="absolute flex items-center m-1.5 md:m-3 bottom-24 md:bottom-12 font-extrabold animate-pulse">
           <div className="animate-bounce">
             <MouseIcon className="mr-4" />
             <div className=""></div>
