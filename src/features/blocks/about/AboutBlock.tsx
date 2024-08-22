@@ -28,7 +28,7 @@ const AboutBlock = (props: AboutBlockProps) => {
             <div className="md:flex-1 max-w-xl mb-8 md:mb-0">
               <RichText className="text-lg mb-4" html={description} />
               <a
-                href="https://drive.google.com/file/d/14iHK58KKoClCOOTEnBMLJWjUz2MmtI2Q/view?usp=drive_link"
+                href="https://docs.google.com/document/d/1h_xIuYQEtmoW-3Gcasjyj0Dl6H539N5yC7RLyg3_zFo/edit?usp=sharing"
                 target="_blank"
                 className="px-6 md:px-10 py-2 text-lg font-medium text-inherit border border-red-500 hover:bg-red-500 hover:text-white transition-all duration-500"
               >
